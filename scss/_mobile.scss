@@ -49,6 +49,17 @@
 			height: 150px;
 		}
 	}
+
+	.about-info {
+		grid-template-areas: 
+			'bioimage'
+			'bio'
+			'resume-1'
+			'resume-2'
+			'resume-3';
+
+		grid-template-columns: 1fr;
+	}
 }
 
 // smartphones
