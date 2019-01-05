@@ -1,0 +1,321 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+img {
+	width: 100%;
+}
+
+body {
+	background-color: #f5f5f5;
+}
+
+input, textarea {
+	outline: none;
+}
+
+/*start utility classes*/
+
+.prefill {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+/*end utility classes*/
+
+/*start nav*/
+
+nav {
+	text-align: center;
+	height: 100px;
+	background-color: #404040;
+	color: white;
+}
+
+.nav-container {
+	padding-top: 12px;
+}
+
+.nav-container h1 {
+	font-size: 3rem;
+}
+
+/*end nav*/
+
+/*start main header*/
+
+.todo-container {
+	max-width: 1100px;
+	border: 1px solid black;
+	margin: auto;
+	margin-top: 50px;
+	display: flex;
+}
+
+.todoToday {
+	flex: 1;
+	border-right: 1px solid black;
+}
+
+.todoDone {
+	flex: 1;
+}
+
+.toDoHeader-container {
+	border-bottom: 1px solid black;
+	height: 30px;
+}
+
+.todoHeader {
+	height: 100%;
+	width: 95%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.todoHeader i {
+	color: green;
+	font-size: 1.5rem;
+}
+
+.todoHeader i:hover {
+	cursor: pointer;
+}
+
+/*end main header*/
+
+/*start main todo list*/
+
+.todo-list-container, .todo-list-done-container {
+	padding: 15px;
+}
+
+.todo-items {
+	margin-bottom: 5px;
+	padding: 10px;
+	background-color: #b3ffb3;
+	border-radius: 10px;
+}
+
+.todo-items:hover {
+	cursor: pointer;
+}
+
+.fa-comment {
+	padding-left: 10px;
+}
+
+
+/*end main todo list*/
+
+/*start pop up*/
+
+.pop-up-container {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.pop-up {
+	position: absolute;
+	padding: 20px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	height: 400px;
+	width: 400px;
+	border-radius: 15px;
+	background-color: #b3ffb3;
+	border: 1px solid black;
+}
+
+.todo-name input {
+	height: 35px;
+	font-size: 20px;
+	width: 100%;
+}
+
+.todo-name {
+	width: 90%;
+	display: inline-block;
+}
+
+.todo-notes textarea {
+	width: 100%;
+	height: 220px;
+	font-size: 20px;
+}
+
+.todo-notes {
+	margin-top: 20px;
+}
+
+.todo-exit {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.todo-exit i {
+	font-size: 30px;
+}
+
+.todo-exit i:hover {
+	cursor: pointer;
+}
+
+.pop-up-btn-container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.pop-up-btn-container button {
+	width: 150px;
+	height: 50px;
+	background-color: white;
+	border: none;
+	font-size: 16px;
+}
+
+.pop-up-btn-container button:hover {
+	cursor: pointer;
+}
+
+/* end pop up*/
+
+/*start pomodoro timer*/
+
+.pomodoro-container {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 250px;
+	background-color: gray;
+	color: white;
+	display: none;
+}
+
+.pomodoro-header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #1e1e1e;
+    border-bottom: 1px solid #444;
+    padding: 5px 10px;
+}
+
+.pomodoro-body {
+	padding: 15px 10px;
+}
+
+.pomodoro-timer-btn-container {
+	display: flex;
+}
+
+.pomodoro-timer {
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+.pomodoro-timer-container {
+	flex: 1;
+}
+
+.pomodoro-stop-container {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.pomodoro-stop {
+	width: 80px;
+	height: 40px;
+	background-color: #e62c2c;
+	border: none;
+	color: white;
+	font-size: 1.4rem;
+	display: block;
+}
+
+.pomodoro-start {
+	width: 80px;
+	height: 40px;
+	background-color: #38DB1C;
+	border: none;
+	color: black;
+	font-size: 1.4rem;
+	display: none;
+}
+
+/* media queries */
+
+/*tablets*/
+@media (min-width: 481px) and (max-width: 780px) {
+
+	nav {
+		height: 80px;
+	}
+
+	.nav-container h1 {
+		font-size: 2rem;
+	}
+
+	.todo-container {
+		flex-direction: column;
+		border: none;
+		max-width: 80vw;
+	}
+
+	.todoToday {
+		
+		border: 1px solid black;
+		margin-bottom: 50px;
+	}
+
+	.todoDone {
+		border: 1px solid black;
+
+	}
+}
+
+@media (max-width: 480px) {
+	nav {
+		height: 70px;
+	}
+
+	.nav-container h1 {
+		font-size: 1.5rem;
+	}
+
+	.todo-container {
+		flex-direction: column;
+		border: none;
+		max-width: 80vw;
+	}
+
+	.todoToday {
+		
+		border: 1px solid black;
+		margin-bottom: 50px;
+	}
+
+	.todoDone {
+		border: 1px solid black;
+
+	}
+}

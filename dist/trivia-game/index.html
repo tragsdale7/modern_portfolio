@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<main>
+		<div class="intro">
+			<div class="logo">
+				<h1>Trivia <br>Game</h1>
+				<i class="far fa-comment fa-4x"></i>
+			</div>
+			<button type="button" class='start'>START</button>
+		</div>
+
+		<div class="popup-container">
+			<div class="popup hide"></div>
+		</div>
+
+		<div class="question-container hide">
+			<h1 class='question-title-container'>Q<span id='question-number'></span>: <span id='question'></span></h1>
+
+			<div class="answer-container">
+				<div class="answer-container-inner">
+					<div>
+						<input type="radio" name='answer'> <span class='answer'></span>
+					</div>
+					<div>
+						<input type="radio" name='answer'> <span class='answer'></span>
+					</div>
+					<div>
+						<input type="radio" name='answer'> <span class='answer'></span>
+					</div>
+					<div>
+						<input type="radio" name='answer'> <span class='answer'></span>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="button-container">
+				<button type="button" class='submitBtn'>Submit</button>
+			</div>
+
+			<div class="score-container">
+				<div class="score"></div>
+			</div>
+		</div>
+	</main>
+	
+	<script src='main.js'></script>
+</body>
+</html>

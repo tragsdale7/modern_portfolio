@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pomodoro</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+	
+	<div class="pop-up-container">
+		<div class="pop-up">
+			<form id='myForm'>
+				<div class="todo-name">
+					<input type="text" id='todoName' name="" placeholder='Enter the todo name here...'>
+				</div>
+
+				<div class="todo-exit"><i class="fas fa-times"></i></div>
+
+				<div class="todo-notes">
+					<textarea name="" id='todoNotes' placeholder="Enter any applicable notes here..."></textarea>
+				</div>
+
+				<div class="pop-up-btn-container">
+					<!-- <button type="submit" class='submitBtn'>
+						Save & Add More
+					</button>
+					<button type="submit" class='submitBtn close'>
+						Save & Close
+					</button> -->
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<nav>
+		<div class="nav-container">
+			<h1>Todo List w/ Pomodoro Timer</h1>
+			<p>using localStorage</p>
+		</div>
+	</nav>	
+
+	<main>
+		<div class="todo-container">
+			<div class="todoToday">
+				<div class="toDoHeader-container">
+					<div class="todoHeader">
+						<div></div>
+						<div>
+							Do Today
+						</div>
+						<i class="fas fa-plus doToday"></i>
+					</div>
+				</div>
+
+				<div class="todo-list-container">
+					
+					
+				</div>
+			</div>
+
+			<div class="todoDone">
+				<div class="toDoHeader-container">
+					<div class="todoHeader">
+						<div></div>
+						<div>
+							Done
+						</div>
+						<i class="fas fa-plus done"></i>
+					</div>
+				</div>
+
+				<div class="todo-list-done-container">
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="pomodoro-container">
+			<div class="pomodoro-header">
+				<p><b>Pomodoro Timer</b></p>
+				<div class="pomodoro-exit"><i class="fas fa-times"></i></div>
+			</div>
+			<div class="pomodoro-body">
+				<div class="pomodoro-timer-btn-container">
+					<div class="pomodoro-timer-container">
+						<p><b>Time until break</b></p>
+						<div class="pomodoro-timer">25:00</div>
+					</div>
+					<div class="pomodoro-stop-container">
+						<button class="pomodoro-stop">Stop</button>
+						<button class="pomodoro-start">Start</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+
+	<script src='main.js'></script>
+</body>
+</html>

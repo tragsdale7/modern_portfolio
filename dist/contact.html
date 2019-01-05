@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, 
 		initial-scale=1.0">
-	<title>Welcome To My Portfolio</title>
+	<title>Contact Me</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
-<body id='bg-img'>
+<body>
 	<!-- make sure to enter command npm run sass in order to auto update css file inside a terminal -->
 	<header>
 		<div class="menu-btn">
@@ -25,7 +25,7 @@
 			</div>
 
 			<ul class="menu-nav">
-				<li class="nav-item current">
+				<li class="nav-item">
 					<a class="nav-link" href='./index.html'>
 						Home
 					</a>
@@ -43,7 +43,7 @@
 					</a>
 				</li>
 
-				<li class="nav-item">
+				<li class="nav-item current">
 					<a class="nav-link" href='./contact.html'>
 						How To Reach Me
 					</a>
@@ -52,23 +52,39 @@
 		</nav>
 	</header>
 
-	<main id="home">
+	<main id="contact">
 		<h1 class="lg-heading">
-			TJ <span class="text-secondary">Ragsdale</span>
+			Contact <span class="text-secondary">Me</span>
 		</h1>
 
 		<h2 class="sm-heading">
-			Web Developer, Programmer, & Entrepreneur
+			This is how you can reach me...
 		</h2>
 
-		<div class="icons">
-			<a target="_blank" href="https://www.linkedin.com/in/tj-ragsdale" title=""><i class="fab fa-linkedin fa-2x"></i></a>
+		<div class="boxes">
+			<div>
+				<span class='text-secondary'>Email:</span>
+				tragsdale7@gmail.com
+			</div>
 
-			<a target="_blank" href="https://github.com/tragsdale7" title=""><i class="fab fa-github fa-2x"></i></a>
+			<div>
+				<span class='text-secondary'>Phone:</span>
+				(919) 717-5041
+			</div>
 
-			<a target="_blank" href="https://codepen.io/tragsdale7/" title=""><i class="fab fa-codepen fa-2x"></i></a>
+			<div>
+				<span class='text-secondary'>Social Media:</span>
+
+				<a id='social-link' href="https://www.linkedin.com/in/tj-ragsdale
+				" title="" target='_blank'>LinkedIn</a>
+			</div>
 		</div>
+		
 	</main>
+
+	<footer id='main-footer'>
+		Copyright &copy; 2019
+	</footer>
 
 	<script src="./js/main.js"></script>
 </body>
